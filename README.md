@@ -17,7 +17,7 @@ composer require laratechofficial/media
 Once installed, you should publish the provided assets to create the necessary migration and config files.
 
 ```bash
-php artisan vendor:publish --provider="Laratech\Media\MediaServiceProvider"
+php artisan vendor:publish --provider="Laratec\Media\MediaServiceProvider"
 ```
 
 ## Key concepts
