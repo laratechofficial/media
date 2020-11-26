@@ -1,0 +1,28 @@
+{
+    "name": "laratechofficial/media",
+    "description": "A laravel package for media manager.",
+    "keywords": ["media", "filemanager"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Padam Shankhadev",
+            "email": "shankhadev123@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "intervention/image": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laratech\\Media\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laratech\\Media\\MediaServiceProvider"
+            ]
+        }
+    }
+}
