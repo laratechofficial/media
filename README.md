@@ -11,13 +11,13 @@ An easy solution to attach files to your eloquent models, with image manipulatio
 You can install the package via composer:
 
 ```bash
-composer require optix/media
+composer require laratechofficial/media
 ```
 
 Once installed, you should publish the provided assets to create the necessary migration and config files.
 
 ```bash
-php artisan vendor:publish --provider="Optix\Media\MediaServiceProvider"
+php artisan vendor:publish --provider="Laratech\Media\MediaServiceProvider"
 ```
 
 ## Key concepts
