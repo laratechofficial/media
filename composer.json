@@ -1,5 +1,5 @@
 {
-    "name": "laratechofficial/media",
+    "name": "laratech/media",
     "description": "A laravel package for media manager.",
     "keywords": ["media", "filemanager"],
     "license": "MIT",
