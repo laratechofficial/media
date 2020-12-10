@@ -195,9 +195,15 @@ trait HasMedia
             $media = $model::findMany($ids);
 
             $media->each(function ($media) use ($conversions) {
-                PerformConversions::dispatch(
-                    $media, $conversions
-                );
+                if (config('media.queue')) {
+                    PerformConversions::dispatch(
+                        $media, $conversions
+                    );
+                } else {
+                    app(ImageManipulator::class)->manipulate(
+                        $media, $conversions
+                    );
+                }
             });
         }
 

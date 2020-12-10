@@ -9,7 +9,7 @@ return [
 
     /*
      * The queue used to perform image conversions.
-     * Leave empty to use the default queue driver.
+     * Leave empty if you don't want to use queue driver.
      */
     'queue' => null,
 
