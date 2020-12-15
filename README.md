@@ -2,10 +2,6 @@
 
 An easy solution to attach files to your eloquent models, with image manipulation built in!
 
-[![Packagist Version](https://img.shields.io/packagist/v/optix/media.svg)](https://packagist.org/packages/optix/media)
-[![Build Status](https://travis-ci.org/optixsolutions/laravel-media.svg?branch=master)](https://travis-ci.org/optixsolutions/laravel-media)
-[![License](https://img.shields.io/github/license/optixsolutions/laravel-media.svg)](https://github.com/optixsolutions/laravel-media/blob/master/LICENSE.md)
-
 ## Installation
 
 You can install the package via composer:
@@ -46,7 +42,7 @@ There are a few key concepts that should be understood before continuing:
 
 ### Upload media
 
-You should use the `Optix\Media\MediaUploader` class to handle file uploads.
+You should use the `Laratech\Media\MediaUploader` class to handle file uploads.
 
 By default, this class will update files to the disk specified in the media config. It saves them as a sanitised
 version of their original file name, and creates a media record in the database with the file's details.
@@ -68,7 +64,7 @@ $media = MediaUploader::fromFile($file)
 
 ### Associate media with a model
 
-In order to associate a media item with a model, you must first include the `Optix\Media\HasMedia` trait.
+In order to associate a media item with a model, you must first include the `Laratech\Media\HasMedia` trait.
 
 ```php
 class Post extends Model
@@ -155,7 +151,7 @@ To get started, you should first register a conversion in one of your applicatio
 
 ```php
 use Intervention\Image\Image;
-use Optix\Media\Facades\Conversion;
+use Laratech\Media\Facades\Conversion;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -204,7 +200,7 @@ The most popular of which are:
 There are a few key differences between this package and the ones listed above. Our package was built to power media
 managers, and make it easy to perform image manipulations. This is better represented by the comparison table below:
 
-| Comparison                      | Spatie              | Plank        | Optix                |
+| Comparison                      | Spatie              | Plank        | Laratech                |
 |---------------------------------|---------------------|--------------|----------------------|
 | **Relationship type**           | One to many         | Many to many | Many to many         |
 | **Provides image manipulation** | Yes                 | No           | Yes                  |
