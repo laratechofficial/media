@@ -2,7 +2,7 @@
 
 This package is fork from [Optixsolutions Laravel Media](https://github.com/optixsolutions/laravel-media) An easy solution to attach files to your eloquent models, with image manipulation built in!
 
-[![Packagist Version](https://img.shields.io/packagist/v/laratechofficial/media.svg)](https://packagist.org/packages/laratech/media)
+![Packagist Version](https://img.shields.io/packagist/v/laratechofficial/media?style=flat-square)
 
 ## Installation
 
