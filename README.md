@@ -1,4 +1,4 @@
-# Laravel Media
+# Laratech Media
 
 An easy solution to attach files to your eloquent models, with image manipulation built in!
 
